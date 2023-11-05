@@ -53,3 +53,4 @@ class StatClass:
         '''функция для очистки истории статистики, ничего не принимает, ничего не возвращает'''
         with open('data/stat.txt', 'w'):
             pass
+        self.error_keys = pd.DataFrame({'Character': list(Globals.allowed_characters), 'Count': 0})
